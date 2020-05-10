@@ -3,7 +3,7 @@ https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/docke
 
 
 # Start TensorFlow Serving container and open the REST API port
-docker run -t --rm -p 8501:8501 \
+docker run -t --rm -p 8500:8500 \
     -v `pwd`/models/:/models/obj_det \
     -e MODEL_NAME=obj_det \
     tensorflow/serving &
